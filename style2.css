@@ -1,0 +1,232 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  background:white;
+  
+}
+
+/*-------------------------------------- menu -------------------------------------------*/
+
+#menu{
+  position:absolute;
+  top: 60.33px;
+  width: 97.71%;
+  display: block;
+  /* border-top: 2px double aquamarine;
+  border-bottom: 2px double aqua;
+  border-radius: 35px; */
+  /* background: black; */
+  list-style-type: none;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  margin-right: 0;
+  margin-left: 0;
+}
+    #menu li {
+      /* color: white; */
+      display: inline-block;
+      width: 200px;
+      height: 60px;
+      line-height:60px;
+      font-size: 18px;
+    }
+        #menu a {
+          text-decoration: none;
+          color: black;
+          display: block;
+        }
+          #menu a:hover {
+            background-color: #484848;
+            font-size: 18.5px;
+            color:aqua;
+            opacity: 0.5;
+          }
+/* -------------------------------- a home----------------------------------------------- */
+          #hm{float: left;}
+          #hm a{
+              font-size: 18px;
+              width: 100px;
+          }
+          #hm a:hover{font-size: 19px;}
+/*----------------------------------------Dropdown Menu-------------------------------------*/
+.sub-menu {
+  z-index: 1;
+  display: none;
+  position: absolute;
+}
+    .sub-menu li {
+      display: none;
+      margin-left: 0 !important;
+    }
+#menu li {
+position: relative;
+}
+#menu li:hover .sub-menu {
+display: block;
+}
+
+    /* định dạng  khung table + color */
+    #bang{
+    /* border-top: 2px double aqua; */
+      /* border: 1px solid black; */
+      background:#484848; 
+    }
+        /* #bang tr a{height: 40px;} */
+        /* #bang td{text-align: left;} */
+
+        #bang  td {
+          border: 1px solid black;
+        }
+        /* #bang table td th{border-collapse: collapse;} */
+        /* #bang th td {font-family: tahoma;} */
+          #bang td a{
+              color: white;
+              width: 200px;
+              font-size: 17px; 
+              text-transform:capitalize;
+            }
+        #bang th{text-align: center;}
+/* ----------------------------------------------------------------------------------------------- */
+  /* thang search + logo*/
+  .LS{
+    /* background:  #b3ffff; */
+    overflow: hidden;
+    /* border: 1px solid black; */
+    padding: 30px 0px;
+  }
+  #search-{
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 16px;
+
+  }
+  #logo{
+    font-family: cursive;
+    float: left;
+    color: #fff;
+    text-align: center;
+    margin-left: 50px;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 40px;
+    /* border: 1px solid black; */
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+/* ---------------------------------------buttom search ----------------------------------------*/
+  .LS .search-container {
+    float: right;
+  }
+  .LS input[type=text] {
+    width: 300px;
+    padding: 10px;            
+    margin: 10px 30px;
+    font-size: 17px;
+    border: 1px solid black;
+  }
+  /* .LS .search-container button {
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    font-size: 22px;
+    cursor: pointer;
+  } */
+  .LS.search-container button:hover {
+    background: #ccc;
+  }
+  @media screen and (max-width: 600px) {
+    .LS .search-container {
+        float: none;
+    }
+    .LS a, .LS input[type=text], .LS .search-container button {
+        text-align: left;
+        width: 100%;
+    }
+    .LS input[type=text] {
+        border: 1px solid #ccc;  
+    }
+  }
+/* -----------------------------------------click search--------------------------------- */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 60px;
+  z-index: 2;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size:40px;
+  margin-left: 80px;
+}
+#main {
+  float: right;
+  transition: margin-right 1s;
+  padding: 6px;
+  /* border: 2px solid black; */
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* ------------------------------------------------------------------------------------- */
+
+
+
+/* CARD */
+.card {
+box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+max-width: 300px;
+margin-top: 20px;
+text-align: center;
+font-family: arial;
+}
+
+.price {
+color: grey;
+font-size: 22px;
+}
+
+.card button {
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+
+.card button:hover {
+opacity: 0.7;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body class="container-fluid">
+    <header></header>
+    <section>
+        
+        <br><br><br><br><br>
+        <!----------------------------------------- SHOPPING CART  ------------------------------------->
+        <div>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal"  data-target="#myModal"
+            style="float: right;">Cart {{count}} </button>
+        </div>
+    
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">             
+            <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body" style="overflow: auto;height: 400px;">
+                        <table width="80%" border="1" class="table table-hover">
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Cost</th>
+            
+                            </tr>
+                            <tr ng-repeat="item in shoppingcart">
+                                <td> {{item.name}} </td>
+                                <td>
+                                    <button ng-click="decreaseQty(item)">--</button>
+                                    {{item.qty}} 
+                                    <button ng-click="increaseQty(item)">++</button>
+                                </td>
+                                <td> {{"$" + item.price}} </td>
+                                <td> {{"$" + getCost(item)}} 
+                                    <span><button ng-click="removeItem(item)">Remove</button></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td> <td></td> <td><h3>Total: </h3></td>
+                                <td>{{"$" + getTotal()}} </td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td>
+                                <td><button ng-click="clearCart()">CLEAR ALL</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>               
+            </div>
+        </div>
+
+        <!--------------------------------------    CATEGORIES --------------------------------- -->
+        <div style="width: 100%; border: 2px solid black; overflow: auto;">
+            <h1 align="center">CATEGORIES</h1>
+            <ul>
+                <li class="categoryBtn"  ng-repeat="cat in categories"> 
+                    <button ng-click="getCat(cat.title)" >
+                        <img src="{{cat.image}}" width="105px">
+                        <p> {{cat.title}} </p>
+                    </button>                   
+                </li>
+            </ul>
+        </div>
+
+        <br>        
+                
+        <div style="display: block; border: 2px solid black; overflow: auto;" >   <!-- LIST OF PRODUCTS -->
+            <h1 align="center"> {{categoryTitle}} </h1>
+            <div class="col-lg-4 col-sm-6" ng-repeat="item in productsList | filter: filterCategory | filter: txtSearch " >
+                <div class="card">
+                    <img src="images/{{item.picture}}" style="width:80%">
+                    <h3>{{item.name}}</h3>
+                    <p class="price">{{"$" + item.price}}</p>
+                    <p>
+                        <button ng-click=" addItem(item)">Add to Cart</button>
+                        <button ng-click=" addItem(item)" data-toggle="modal"  data-target="#myModal">Buy</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+      
+        
+    </section>
+    <footer></footer>
+</body>
+</html>

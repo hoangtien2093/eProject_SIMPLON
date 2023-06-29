@@ -1,0 +1,41 @@
+{
+    "products":[  
+        {"id":"np01",   "category":"NAIL PAINTS"    , "name":"Nail Paádad a adasd ada đáint 01"    , "picture":"np1.png",  "price":2700,   "qty":1},
+        {"id":"np03",   "category":"NAIL PAINTS"    , "name":"Nail Paint 02"    , "picture":"np1.png",  "price":2400,  "qty":1},
+        {"id":"np04",   "category":"NAIL PAINTS"    , "name":"Nail Paiádasdasdasdasdasdasdasnt 03"    , "picture":"np2.png",  "price":7000,  "qty":1},
+        {"id":"np02",   "category":"NAIL PAINTS"    , "name":"Nail Paint 04"    , "picture":"np2.png",  "price":6800,  "qty":1},
+        {"id":"np05",   "category":"NAIL PAINTS"    , "name":"Nail Paint 05"    , "picture":"np1.png",  "price":6800,  "qty":1},
+        {"id":"np06",   "category":"NAIL PAINTS"    , "name":"Nail Paint 06"    , "picture":"np2.png",  "price":2400,  "qty":1},
+        {"id":"np07",   "category":"NAIL PAINTS"    , "name":"Nail Paint 07"    , "picture":"np1.png",  "price":7000,  "qty":1},
+        {"id":"np08",   "category":"NAIL PAINTS"    , "name":"Nail Paint 08"    , "picture":"np2.png",  "price":2700,  "qty":1},
+        {"id":"np09",   "category":"NAIL PAINTS"    , "name":"Nail Paint 09"    , "picture":"np1.png",  "price":6800,  "qty":1},
+        {"id":"np10",   "category":"NAIL PAINTS"    , "name":"Nail Paint 10"    , "picture":"np2.png",  "price":2400,  "qty":1},
+        {"id":"na01",   "category":"NAIL ARTS"     , "name":"Nail Art 01"      , "picture":"np1.png",  "price":7000,  "qty":1},
+        {"id":"na02",   "category":"NAIL ARTS"     , "name":"Nail Art 02"      , "picture":"np2.png",  "price":6800,  "qty":1},
+        {"id":"na03",   "category":"NAIL ARTS"     , "name":"Nail Art 03"      , "picture":"np1.png",  "price":2400,  "qty":1},
+        {"id":"na04",   "category":"NAIL ARTS"     , "name":"Nail Art 04"      , "picture":"np2.png",  "price":7000,  "qty":1},
+        {"id":"j01",   "category":"JEWELRY"      , "name":"Jewellry 01"      , "picture":"nhan1.png",  "price":7000,  "qty":1},
+        {"id":"j02",   "category":"JEWELRY"      , "name":"Jewellry 02"      , "picture":"nhan2.png",  "price":7500,  "qty":1},
+        {"id":"j03",   "category":"JEWELRY"      , "name":"Jewellry 03"      , "picture":"nhan3.png",  "price":9000,  "qty":1},
+        {"id":"j04",   "category":"JEWELRY"      , "name":"Jewellry 04"      , "picture":"nhan4.png",  "price":2000,  "qty":1},
+        {"id":"j05",   "category":"JEWELRY"      , "name":"Jewellry 05"      , "picture":"nhan5.png",  "price":27500,  "qty":1},
+        {"id":"j06",   "category":"JEWELRY"      , "name":"Jewellry 06"      , "picture":"nhan1.png",  "price":3500,  "qty":1},
+        {"id":"j07",   "category":"JEWELRY"      , "name":"Jewellry 07"      , "picture":"nhan2.png",  "price":1500,  "qty":1},
+        {"id":"j08",   "category":"JEWELRY"      , "name":"Jewellry 08"      , "picture":"nhan3.png",  "price":4300,  "qty":1},
+        {"id":"j09",   "category":"JEWELRY"      , "name":"Jewellry 09"      , "picture":"nhan4.png",  "price":300,  "qty":1}
+    ],
+    "categories": [ {"title":"ALL PRODUCTS",     "image": "images/np1.png"},
+                    {"title":"HAIR",             "image": "images/np1.png"},
+                    {"title":"SKIN",             "image": "images/np1.png"},     
+                    {"title":"MAKE-UP KITS",     "image": "images/np1.png"},    
+                    {"title":"NAIL PAINTS",      "image": "images/np1.png"},  
+                    {"title":"NAIL ARTS",        "image": "images/np1.png"},      
+                    {"title":"JEWELRY",          "image": "images/np1.png"},  
+                    {"title":"WEDDING KIT",      "image": "images/np1.png"},  
+                    {"title":"UPCOMING",         "image": "images/np1.png"}
+    ],   
+    
+    "cart":[],
+    "countitem" : 0
+  
+}
